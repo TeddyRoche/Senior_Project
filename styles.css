@@ -194,22 +194,86 @@ Rotating Banner ----------------------------------------------------------------
 Grid Boxes ----------------------------------------------------------------------------------------
 */
 .grid-con{
-    padding: 3rem 20rem;
+    padding: 1.5rem 20rem;
 }
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2553A8FF;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding: 10px;
-    column-gap: 50px;
-    row-gap: 50px;
+    gap: 20px;
+    overflow: hidden;
   }
   .grid-item {
-    background-color: rgba(163, 163, 163, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 100px;
-    font-size: 30px;
+    position: relative;
+    border: 2px solid rgb(37, 83, 168);
+    padding-top: 50px;
+    height: 200px;
+    font-size: 50px;
     text-align: center;
+    overflow: hidden;
+    border-radius: 8%;
+    color: rgb(37, 83, 168);
+    font-weight: bolder;
+  }
+  .grid-item.Bathroom{
+    background-image: url("/Images/bathroom.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-item.Kitchen{
+    background-image: url("/Images/Kitchen.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-item.Living{
+    background-image: url("/Images/living.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-item.Bed{
+    background-image: url("/Images/bedroom.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-item.Office{
+    background-image: url("/Images/office.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-item.Dinning{
+    background-image: url("/Images/dinning.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-item.Attic{
+    background-image: url("/Images/attic.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-item.Base{
+    background-image: url("/Images/base.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-item.Wash{
+    background-image: url("/Images/laundry.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+.grid-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(105, 105, 105); /* Adjust the color and opacity as needed */
+    opacity: 0.4; /* Adjust the opacity as needed */
+    z-index: 1;
+}
+.text-overlay {
+    position: relative;
+    z-index: 2;
   }
 /*
 Grid Boxes ----------------------------------------------------------------------------------------
