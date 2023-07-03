@@ -80,16 +80,45 @@
                 <img id="slider-3" src="Images/27e33cff4b73769e28c5e06f43d366f7.jpg" alt="">
             </div>
             <div class="slider-nav">
-                <a href="#slider-1"></a>
-                <a href="#slider-2"></a>
-                <a href="#slider-3"></a>
-
+                <a href="#" class="slider-link" data-target="slider-1"></a>
+                <a href="#" class="slider-link" data-target="slider-2"></a>
+                <a href="#" class="slider-link" data-target="slider-3"></a>
             </div>
         </div>
     </section>
-
     <!--
         Rotating Banner
     -->
+    <!--
+        Grid boxes
+    -->
+    <section class="grid-con">
+        <div class="grid-container">
+            <div class="grid-item">Bathroom</div>
+            <div class="grid-item">Kitchen</div>
+            <div class="grid-item">Living-Room</div>
+            <div class="grid-item">Bedroom</div>
+            <div class="grid-item">Office</div>
+            <div class="grid-item">Dinning-Room</div>
+            <div class="grid-item">Attic</div>
+            <div class="grid-item">Basement</div>
+            <div class="grid-item">Wash-Room</div>
+        </div>
+    </section> 
+    <!--
+        Grid boxes
+    -->
   </body>  
+  <script>
+    const sliderLinks = document.querySelectorAll('.slider-link');
+
+    sliderLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default anchor behavior
+            const target = event.target.dataset.target;
+            const targetElement = document.getElementById(target);
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    });
+</script>
 </html>  
