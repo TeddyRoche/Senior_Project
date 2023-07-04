@@ -2,9 +2,136 @@
 <html>
 <head>
   <title>Basement</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/2197434479.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Basement</h1>
-  <a href="/index.html" class="button">Go to New Page</a>
+  <!--
+        Sidebar Menu
+    -->
+    <nav>
+      <ul>
+          <li>
+              <a href="#" class="logo">
+                  <img src="/Images/Home-Repair-Logo-6.png" alt="">
+                  <span class="nav-bar">Home Repair</span>
+              </a>
+          </li>
+          <li onclick="navigateTo('/index.html')">
+            <a href="#">
+              <i class="fas fa-solid fa-house-blank"></i>                
+              <span class="nav-bar">Home</span>
+          </a></li>
+          <li><a href="#">
+              <i class="fas fa-solid fa-user"></i>
+              <span class="nav-bar">Profile</span>
+          </a></li>
+          <li><a href="#">
+              <i class="fas fa-solid fa-rectangle-history"></i>
+              <span class="nav-bar">History</span>
+          </a></li>
+          <li><a href="#">
+              <i class="fas fa-solid fa-bookmark"></i>
+              <span class="nav-bar">Bookmarked</span>
+          </a></li>
+          <li><a href="#" >
+              <i class="fas fa-solid fa-gear"></i>
+              <span class="nav-bar">Settings</span>
+          </a></li>
+          <li><a href="#" >
+              <i class="fas fa-solid fa-circle-info"></i>
+              <span class="nav-bar">Help</span>
+          </a></li>
+          <li><a href="#" class="bottom-nav">
+              <i class="fas fa-solid fa-right-from-bracket"></i>
+              <span class="nav-bar">Logout</span>
+          </a></li>
+      </ul>
+     </nav>
+  <!--
+      Sidebar Menu
+  -->
+      <!--
+        Search Bar
+    -->
+    <div class="Search-Bar">
+      <div class="search_wrap search_wrap_1">
+    <div class="search_box">
+      <input type="text" class="input" placeholder="search...">
+      <div class="btn btn_common">
+        <i class="fas fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--
+      Search Bar
+  -->
+      <!--
+        Rotating Banner
+    -->
+    <section class="container">
+      <div class="slider-wrapper">
+          <div class="slider">
+              <img id="slider-1" src="/Images/banner-6617550_640.webp" alt="">
+              <img id="slider-2" src="/Images/modern-blue-technology-background-banner-with-hexagon-pattern_181182-19734.avif" alt="">
+              <img id="slider-3" src="/Images/27e33cff4b73769e28c5e06f43d366f7.jpg" alt="">
+          </div>
+          <div class="slider-nav">
+              <a href="#" class="slider-link" data-target="slider-1"></a>
+              <a href="#" class="slider-link" data-target="slider-2"></a>
+              <a href="#" class="slider-link" data-target="slider-3"></a>
+          </div>
+      </div>
+  </section>
+  <!--
+      Rotating Banner
+  -->
 </body>
+<script>
+//Home Button--------------------------------------------------------------------------------
+  function navigateTo(url) {
+  window.location.href = url;
+}
+//Home Button--------------------------------------------------------------------------------
+
+//Banner Button------------------------------------------------------------------------------
+const sliderLinks = document.querySelectorAll('.slider-link');
+
+sliderLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default anchor behavior
+        const target = event.target.dataset.target;
+        const targetElement = document.getElementById(target);
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+});
+//Banner Button------------------------------------------------------------------------------
+
+//Banner-------------------------------------------------------------------------------------
+     // Get the slider element
+const slider = document.querySelector('.slider');
+// Get the total number of slides
+const totalSlides = slider.children.length;
+// Set the current slide index
+let currentSlide = 0;
+
+// Function to scroll to the next slide
+function scrollToNextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  const slideWidth = slider.offsetWidth;
+  slider.scroll({
+    left: slideWidth * currentSlide,
+    behavior: 'smooth'
+  });
+}
+
+// Set an interval to scroll to the next slide every 15 seconds
+setInterval(scrollToNextSlide, 15000);
+//Banner-------------------------------------------------------------------------------------
+
+</script>
 </html>

@@ -20,7 +20,8 @@
                     <span class="nav-bar">Home Repair</span>
                 </a>
             </li>
-            <li><a href="#">
+            <li onclick="navigateTo('index.html')">
+                <a href="#">
                 <i class="fas fa-solid fa-house-blank"></i>                
                 <span class="nav-bar">Home</span>
             </a></li>
@@ -128,24 +129,30 @@
     -->
   </body>  
   <script>
-//Banner Button------------------------------------------------------------------------------
-    const sliderLinks = document.querySelectorAll('.slider-link');
-
-    sliderLinks.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default anchor behavior
-            const target = event.target.dataset.target;
-            const targetElement = document.getElementById(target);
-            targetElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        });
-    });
-//Banner Button------------------------------------------------------------------------------
+//Home Button--------------------------------------------------------------------------------
+    function navigateTo(url) {
+        window.location.href = url;
+    }   
+//Home Button--------------------------------------------------------------------------------
 
 //WebPage switch-----------------------------------------------------------------------------
     function navigateTo(url) {
         window.location.href = url;
     }
 //WebPage switch-----------------------------------------------------------------------------
+
+//Banner Button------------------------------------------------------------------------------
+const sliderLinks = document.querySelectorAll('.slider-link');
+
+sliderLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default anchor behavior
+        const target = event.target.dataset.target;
+        const targetElement = document.getElementById(target);
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+});
+//Banner Button------------------------------------------------------------------------------
 
 //Banner-------------------------------------------------------------------------------------
      // Get the slider element
