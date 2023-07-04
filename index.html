@@ -104,7 +104,7 @@
                 <span class="text-overlay">Living-Room</span>
             </div>
             <div class="grid-item Bed" onclick="navigateTo('Room_Web_Pages/bedroom.html')">
-                <span class="text-overlay">Bed</span>
+                <span class="text-overlay">Bedroom</span>
             </div>
             <div class="grid-item Office" onclick="navigateTo('Room_Web_Pages/office.html')">
                 <span class="text-overlay">Office</span>
@@ -149,21 +149,24 @@
 
 //Banner-------------------------------------------------------------------------------------
      // Get the slider element
-    const slider = document.querySelector('.slider');
-    // Get the total number of slides
-    const totalSlides = slider.children.length;
-    // Set the current slide index
-    let currentSlide = 0;
+const slider = document.querySelector('.slider');
+// Get the total number of slides
+const totalSlides = slider.children.length;
+// Set the current slide index
+let currentSlide = 0;
 
-    // Function to scroll to the next slide
-    function scrollToNextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        const nextButton = document.querySelector(`[data-target="slider-${currentSlide + 1}"]`);
-        nextButton.click();
-    }
+// Function to scroll to the next slide
+function scrollToNextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  const slideWidth = slider.offsetWidth;
+  slider.scroll({
+    left: slideWidth * currentSlide,
+    behavior: 'smooth'
+  });
+}
 
-    // Set an interval to scroll to the next slide every 15 seconds
-    setInterval(scrollToNextSlide, 15000);
+// Set an interval to scroll to the next slide every 15 seconds
+setInterval(scrollToNextSlide, 15000);
 //Banner-------------------------------------------------------------------------------------
 
 </script>
