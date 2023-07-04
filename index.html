@@ -94,31 +94,31 @@
     -->
     <section class="grid-con">
         <div class="grid-container">
-            <div class="grid-item Bathroom">      
+            <div class="grid-item Bathroom" onclick="navigateTo('Room_Web_Pages/bathroom.html')">      
                 <span class="text-overlay">Bathroom</span>
             </div>
-            <div class="grid-item Kitchen">
+            <div class="grid-item Kitchen" onclick="navigateTo('Room_Web_Pages/kitchen.html')">
                 <span class="text-overlay">Kitchen</span>
             </div>
-            <div class="grid-item Living">
+            <div class="grid-item Living" onclick="navigateTo('Room_Web_Pages/livingroom.html')">
                 <span class="text-overlay">Living-Room</span>
             </div>
-            <div class="grid-item Bed">
+            <div class="grid-item Bed" onclick="navigateTo('Room_Web_Pages/bedroom.html')">
                 <span class="text-overlay">Bed</span>
             </div>
-            <div class="grid-item Office">
+            <div class="grid-item Office" onclick="navigateTo('Room_Web_Pages/office.html')">
                 <span class="text-overlay">Office</span>
             </div>
-            <div class="grid-item Dinning">
+            <div class="grid-item Dinning" onclick="navigateTo('Room_Web_Pages/dinningroom.html')">
                 <span class="text-overlay">Dinning-Room</span>
             </div>
-            <div class="grid-item Attic">
+            <div class="grid-item Attic" onclick="navigateTo('Room_Web_Pages/attic.html')">
                 <span class="text-overlay">Attic</span>
             </div>
-            <div class="grid-item Base">
+            <div class="grid-item Base" onclick="navigateTo('Room_Web_Pages/basement.html')">
                 <span class="text-overlay">Basement</span>
             </div>
-            <div class="grid-item Wash">
+            <div class="grid-item Wash" onclick="navigateTo('Room_Web_Pages/laundryroom.html')">
                 <span class="text-overlay">Laundry-Room</span>
             </div>
         </div>
@@ -128,6 +128,7 @@
     -->
   </body>  
   <script>
+//Banner Button------------------------------------------------------------------------------
     const sliderLinks = document.querySelectorAll('.slider-link');
 
     sliderLinks.forEach(link => {
@@ -138,5 +139,32 @@
             targetElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         });
     });
+//Banner Button------------------------------------------------------------------------------
+
+//WebPage switch-----------------------------------------------------------------------------
+    function navigateTo(url) {
+        window.location.href = url;
+    }
+//WebPage switch-----------------------------------------------------------------------------
+
+//Banner-------------------------------------------------------------------------------------
+     // Get the slider element
+    const slider = document.querySelector('.slider');
+    // Get the total number of slides
+    const totalSlides = slider.children.length;
+    // Set the current slide index
+    let currentSlide = 0;
+
+    // Function to scroll to the next slide
+    function scrollToNextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        const nextButton = document.querySelector(`[data-target="slider-${currentSlide + 1}"]`);
+        nextButton.click();
+    }
+
+    // Set an interval to scroll to the next slide every 15 seconds
+    setInterval(scrollToNextSlide, 15000);
+//Banner-------------------------------------------------------------------------------------
+
 </script>
 </html>  

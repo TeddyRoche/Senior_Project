@@ -275,6 +275,25 @@ Grid Boxes ---------------------------------------------------------------------
     position: relative;
     z-index: 2;
   }
+  .grid-item:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(37, 83, 168);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    z-index: 3;
+}
+
+.button:hover {
+    background-color: rgb(20, 60, 140);
+}
 /*
 Grid Boxes ----------------------------------------------------------------------------------------
 */
