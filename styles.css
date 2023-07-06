@@ -21,7 +21,7 @@ Sidebar Menu -------------------------------------------------------------------
 .Desktop{
   display: block;
 }
-.Desktop nav{
+ nav{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -34,24 +34,24 @@ Sidebar Menu -------------------------------------------------------------------
     box-shadow: 0 20px 35px rgba(0,0,0,0.1);
 }
 
-.Desktop.logo{
+.Desktop .logo{
     text-align: center;
     display: flex;
     transition: all 0.5s ease;
     margin: 10px 0 0 10px;
 }
-.Desktop.logo img{
+.Desktop .logo img{
     width: 61.5px;
     height: 60px;
     border-radius: 15%;
 }
-.Desktop.logo span{
+.Desktop .logo span{
     font-weight: bold;
     padding-left: 15px;
     font-size: 18px;
     text-transform: uppercase;
 }
-.Desktop a{
+ a{
     position: relative;
     color: rgba(37, 83, 168, 1);
     font-size: 14px;
@@ -59,7 +59,7 @@ Sidebar Menu -------------------------------------------------------------------
     width: 300px;
     padding: 10px;
 }
-.Desktop.fas{
+.Desktop .fas{
     position: relative;
     width: 80px;
     height: 50px;
@@ -67,19 +67,19 @@ Sidebar Menu -------------------------------------------------------------------
     font-size: 25px;
     text-align: center;
 }
-.Desktop.nav-bar{
+.Desktop .nav-bar{
     position: relative;
     top: 12px;
     margin-left: 10px;
 }
-.Desktop a:hover{
+ a:hover{
     background: #eee;   
 }
-.Desktop nav:hover{
+ nav:hover{
     width: 280px;
     transition: all 0.5s ease;
 }
-.Desktop.bottom-nav{
+.Desktop .bottom-nav{
     position: absolute;
     bottom: 0;
 }
@@ -314,9 +314,6 @@ Grid Boxes ---------------------------------------------------------------------
 */
 
 @media screen and (max-width: 600px) {
-  .Search-Bar{
-    display: none;
-  }
   .Mobile{
     display: block;
   }
@@ -324,11 +321,6 @@ Grid Boxes ---------------------------------------------------------------------
     display: none;
   }
 
-  * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  }
   .Mobile header a {
     text-decoration: none;
   }
