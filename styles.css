@@ -15,7 +15,13 @@ body {
 /*
 Sidebar Menu --------------------------------------------------------------------------------------
 */
-nav{
+.Mobile{
+  display: none;
+}
+.Desktop{
+  display: block;
+}
+.Desktop nav{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -28,24 +34,24 @@ nav{
     box-shadow: 0 20px 35px rgba(0,0,0,0.1);
 }
 
-.logo{
+.Desktop.logo{
     text-align: center;
     display: flex;
     transition: all 0.5s ease;
     margin: 10px 0 0 10px;
 }
-.logo img{
+.Desktop.logo img{
     width: 61.5px;
     height: 60px;
     border-radius: 15%;
 }
-.logo span{
+.Desktop.logo span{
     font-weight: bold;
     padding-left: 15px;
     font-size: 18px;
     text-transform: uppercase;
 }
-a{
+.Desktop a{
     position: relative;
     color: rgba(37, 83, 168, 1);
     font-size: 14px;
@@ -53,7 +59,7 @@ a{
     width: 300px;
     padding: 10px;
 }
-.fas{
+.Desktop.fas{
     position: relative;
     width: 80px;
     height: 50px;
@@ -61,19 +67,19 @@ a{
     font-size: 25px;
     text-align: center;
 }
-.nav-bar{
+.Desktop.nav-bar{
     position: relative;
     top: 12px;
     margin-left: 10px;
 }
-a:hover{
+.Desktop a:hover{
     background: #eee;   
 }
-nav:hover{
+.Desktop nav:hover{
     width: 280px;
     transition: all 0.5s ease;
 }
-.bottom-nav{
+.Desktop.bottom-nav{
     position: absolute;
     bottom: 0;
 }
@@ -306,3 +312,141 @@ Grid Boxes ---------------------------------------------------------------------
 /*
 Grid Boxes ----------------------------------------------------------------------------------------
 */
+
+@media screen and (max-width: 600px) {
+  .Search-Bar{
+    display: none;
+  }
+  .Mobile{
+    display: block;
+  }
+  .Desktop{
+    display: none;
+  }
+
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+  .Mobile header a {
+    text-decoration: none;
+  }
+  
+  .Mobile header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Mobile #brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #brand a {
+    color: #09c372;
+  }
+  .Mobile ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .Mobile ul a {
+    color: black;
+  }
+  
+  .Mobile ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  .Mobile ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+   #login,
+  #signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+  }
+  
+   #login {
+    border: 1px solid #498afb;
+  }
+  
+   #signup {
+    border: 1px solid #ff3860;
+  }
+  
+   #signup a {
+    color: #ff3860;
+  }
+  
+   #login a {
+    color: #498afb;
+  }
+  
+   #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+   #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .Mobile .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .Mobile .open .bar2 {
+    opacity: 0;
+  }
+  
+  .Mobile .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .Mobile .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .Mobile .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+  
+  .Mobile.mobile-menu li {
+    margin-bottom: 10px;
+  }
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
