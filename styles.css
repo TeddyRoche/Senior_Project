@@ -21,6 +21,18 @@ Sidebar Menu -------------------------------------------------------------------
 .Desktop{
   display: block;
 }
+.Search-Bar .Mobile{
+  display: none;
+}
+.Search-Bar .Desktop{
+  display: block;
+}
+.container .Mobile{
+  display: none;
+}
+.container .Desktop{
+  display: block;
+}
  nav{
     position: fixed;
     top: 0;
@@ -313,21 +325,63 @@ Grid Boxes ---------------------------------------------------------------------
 Grid Boxes ----------------------------------------------------------------------------------------
 */
 
+/*
+Mobile ----------------------------------------------------------------------------------------
+*/
+
 @media screen and (max-width: 600px) {
   .Mobile{
     display: block;
+    position: relative; 
   }
   .Desktop{
     display: none;
   }
+  .Search-Bar .Desktop{
+    display: none;
+  }
+  .container .Desktop{
+    display: none;
+  }
+  .Search-Bar .Mobile{
+    display: block;
+  }
+  .container .Mobile{
+    display: block;
+  }
 
+  /*
+  Nav Bar ----------------------------------------------------------------------------------------
+  */
+  .Mobile .NAV{
+    z-index: 999;
+  }
+  .Mobile .logo{
+    text-align: center;
+    display: flex;
+    margin-left: -20px;
+    margin-top: -4px;
+}
+.Mobile .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+}
+.Mobile .logo span{
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
   .Mobile header a {
     text-decoration: none;
   }
   
   .Mobile header {
     padding: 0 20px;
-    background-color: #1d1f1d;
+    background-color: #2553A8FF;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -352,11 +406,14 @@ Grid Boxes ---------------------------------------------------------------------
   }
   
   .Mobile ul a {
-    color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
   }
   
   .Mobile ul li {
-    padding: 5px;
+    padding: 1px;
     margin-left: 10px;
   }
   
@@ -368,11 +425,24 @@ Grid Boxes ---------------------------------------------------------------------
    #login,
   #signup {
     border-radius: 5px;
-    padding: 5px 8px;
+    padding: 5px 4px;
+    width: 100px; 
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    transition: ease 0.3s;
   }
-  
+  #signup span,
+  #login span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
    #login {
-    border: 1px solid #498afb;
+    border: 1px solid #30bd53;
+    margin-bottom: 10px;
   }
   
    #signup {
@@ -384,9 +454,9 @@ Grid Boxes ---------------------------------------------------------------------
   }
   
    #login a {
-    color: #498afb;
+    color: #30bd53;
   }
-  
+
    #hamburger-icon {
     margin: auto 0;
     display: none;
@@ -427,8 +497,11 @@ Grid Boxes ---------------------------------------------------------------------
     position: absolute;
     top: 50px;
     left: 0;
-    height: calc(100vh - 50px);
+    height: 300px;
     width: 100%;
+    background-color: #2553A8FF; 
+    z-index: 998; 
+    padding: 10px;
   }
   
   .Mobile.mobile-menu li {
@@ -441,4 +514,91 @@ Grid Boxes ---------------------------------------------------------------------
   #hamburger-icon {
     display: block;
   }
+  /*
+  Nav Bar ----------------------------------------------------------------------------------------
+  */
+
+  /*
+  Search Bar ----------------------------------------------------------------------------------------
+  */
+  .Search-Bar .input{
+    border: 0;
+    outline: none;
+    color: #8b7d77;
+  }
+  .search_wrap{
+	  margin: 0px;
+    padding-bottom: 10px;
+
+  }
+  .search_wrap .search_box{
+    position: relative;
+    width: 100%;
+    height: 40px;
+  }
+  .search_wrap .search_box .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+  }
+  
+  .search_wrap .search_box .btn.btn_common .fas{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .search_wrap.search_wrap_1 .search_box .btn{
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .search_wrap.search_wrap_1 .search_box .input{
+    padding-right: 80px;
+  }
+  /*
+  Search Bar ----------------------------------------------------------------------------------------
+  */
+
+  /*
+Rotating Banner -----------------------------------------------------------------------------------
+*/
+.container{
+  padding: 0rem;
+}
+.slider-wrapper{
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.slider{
+  display: flex;
+  aspect-ratio: 24 / 3;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+  border-radius: 0.5rem;
+}
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.slider-nav{
+  display: none;
+}
+/*
+Rotating Banner -----------------------------------------------------------------------------------
+*/
+
+
 }

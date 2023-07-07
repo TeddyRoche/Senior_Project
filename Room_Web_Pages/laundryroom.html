@@ -12,7 +12,7 @@
   <!--
         Sidebar Menu
     -->
-    <nav>
+    <nav class="Desktop">
       <ul>
           <li>
               <a href="#" class="logo">
@@ -21,48 +21,85 @@
               </a>
           </li>
           <li onclick="navigateTo('/index.html')">
-            <a href="#">
-              <i class="fas fa-solid fa-house-blank"></i>                
-              <span class="nav-bar">Home</span>
-          </a></li>
+              <a href="#">
+                  <i class="fas fa-house-blank"></i>
+                  <span class="nav-bar">Home</span>
+              </a>
+          </li>
           <li><a href="#">
-              <i class="fas fa-solid fa-user"></i>
+              <i class="fas fa-user"></i>
               <span class="nav-bar">Profile</span>
           </a></li>
           <li><a href="#">
-              <i class="fas fa-solid fa-rectangle-history"></i>
+              <i class="fas fa-rectangle-history"></i>
               <span class="nav-bar">History</span>
           </a></li>
           <li><a href="#">
-              <i class="fas fa-solid fa-bookmark"></i>
+              <i class="fas fa-bookmark"></i>
               <span class="nav-bar">Bookmarked</span>
           </a></li>
-          <li><a href="#" >
-              <i class="fas fa-solid fa-gear"></i>
+          <li><a href="#">
+              <i class="fas fa-gear"></i>
               <span class="nav-bar">Settings</span>
           </a></li>
-          <li><a href="#" >
-              <i class="fas fa-solid fa-circle-info"></i>
+          <li><a href="#">
+              <i class="fas fa-circle-info"></i>
               <span class="nav-bar">Help</span>
           </a></li>
           <li><a href="#" class="bottom-nav">
-              <i class="fas fa-solid fa-right-from-bracket"></i>
+              <i class="fas fa-right-from-bracket"></i>
               <span class="nav-bar">Logout</span>
           </a></li>
       </ul>
-     </nav>
+  </nav>
+  <div class="Mobile NAV" id="mobileNav">
+      <header>
+        <a href="#" class="logo">
+          <img src="/Images/Home-Repair-Logo-6.png" alt="">
+          <span class="nav-bar">Home Repair</span>
+      </a>        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li id="login"><a href="/login">Login<span></span></a></li>
+            <li id="signup"><a href="/signup">Signup<span></span></a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li id="login"><a href="/login">Login<span></span></a></li>
+            <li id="signup"><a href="/signup">Signup<span></span></a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
   <!--
       Sidebar Menu
   -->
       <!--
         Search Bar
     -->
-    <div class="Search-Bar">
+    <div class="Search-Bar Desktop">
       <div class="search_wrap search_wrap_1">
     <div class="search_box">
       <input type="text" class="input" placeholder="search...">
       <div class="btn btn_common">
         <i class="fas fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="Search-Bar Mobile">
+      <div class="search_wrap search_wrap_1">
+    <div class="search_box">
+      <input type="text" class="input" placeholder="search...">
       </div>
     </div>
   </div>
@@ -73,7 +110,21 @@
       <!--
         Rotating Banner
     -->
-    <section class="container">
+    <section class="container Desktop">
+      <div class="slider-wrapper">
+          <div class="slider">
+              <img id="slider-1" src="/Images/banner-6617550_640.webp" alt="">
+              <img id="slider-2" src="/Images/modern-blue-technology-background-banner-with-hexagon-pattern_181182-19734.avif" alt="">
+              <img id="slider-3" src="/Images/27e33cff4b73769e28c5e06f43d366f7.jpg" alt="">
+          </div>
+          <div class="slider-nav">
+              <a href="#" class="slider-link" data-target="slider-1"></a>
+              <a href="#" class="slider-link" data-target="slider-2"></a>
+              <a href="#" class="slider-link" data-target="slider-3"></a>
+          </div>
+      </div>
+  </section>
+  <section class="container Mobile">
       <div class="slider-wrapper">
           <div class="slider">
               <img id="slider-1" src="/Images/banner-6617550_640.webp" alt="">
@@ -132,6 +183,9 @@ function scrollToNextSlide() {
 // Set an interval to scroll to the next slide every 15 seconds
 setInterval(scrollToNextSlide, 15000);
 //Banner-------------------------------------------------------------------------------------
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
 
 </script>
 </html>
