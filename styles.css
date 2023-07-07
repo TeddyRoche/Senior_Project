@@ -545,7 +545,6 @@ Mobile -------------------------------------------------------------------------
     color: #8b7d77;
   }
   .Mobile .search_wrap{
-	  margin: 0px;
     padding-bottom: 10px;
 
   }
@@ -556,30 +555,10 @@ Mobile -------------------------------------------------------------------------
   }
   .Mobile .search_wrap .search_box .input{
     position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 3px;
     font-size: 18px;
-  }
-  
-  .Mobile .search_wrap .search_box .btn.btn_common .fas{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    font-size: 20px;
-  }
-  
-  .Mobile .search_wrap.search_wrap_1 .search_box .btn{
-    right: 0;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-  .Mobile .search_wrap.search_wrap_1 .search_box .input{
-    padding-right: 80px;
   }
   /*
   Search Bar ----------------------------------------------------------------------------------------
@@ -622,7 +601,7 @@ Rotating Banner ----------------------------------------------------------------
 Grid Boxes ----------------------------------------------------------------------------------------
 */
 .Mobile .grid-con{
-  padding: 10rem 10rem;
+  padding: 11rem 10rem;
   width: 100%;
 }
 .Mobile .grid-container {
