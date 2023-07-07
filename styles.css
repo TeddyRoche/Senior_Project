@@ -337,6 +337,9 @@ Mobile -------------------------------------------------------------------------
 */
 
 @media screen and (max-width: 600px) {
+  body {
+    touch-action: manipulation;
+  }
   .Mobile{
     display: block;
     position: relative; 
@@ -698,26 +701,11 @@ Grid Boxes ---------------------------------------------------------------------
   opacity: 0.3;
   z-index: 1;
 }
-.Mobile .grid-item:hover::before {
-opacity: 0.8; 
-}
 .Mobile .text-overlay {
   position: relative;
   pointer-events: none;
   user-select: none;
   z-index: 2;
-}
-.Mobile .grid-item:hover {
-  transform: scale(1.05);
-  padding-top: 30px;
-}
-.Mobile .grid-item:hover {
-transform: scale(1.05);
-color: rgb(7, 66, 173); 
-font-weight: bold; 
-font-size: 70px;
-border-color: rgb(7, 66, 173);
-
 }
 
 /*
