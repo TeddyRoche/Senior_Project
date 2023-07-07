@@ -51,6 +51,7 @@ Sidebar Menu -------------------------------------------------------------------
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    z-index: 500;
 }
 
 .Desktop .logo{
@@ -225,8 +226,8 @@ Grid Boxes ---------------------------------------------------------------------
 }
 .Desktop .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-    padding: 25px 200px 10px 250px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    padding: 25px 350px 10px 250px;
     gap: 20px;
     overflow: hidden;
     justify-content: center;
@@ -248,7 +249,7 @@ Grid Boxes ---------------------------------------------------------------------
     grid-column-start: 1;
     grid-column-end: 3;
     justify-self: center;
-    width: 600px;
+    width: 700px;
   }
 
   .Desktop .grid-item.Bathroom{
