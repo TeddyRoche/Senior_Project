@@ -546,15 +546,17 @@ Mobile -------------------------------------------------------------------------
   }
   .Mobile .search_wrap{
     padding-bottom: 10px;
-
+    justify-content: center;
+    display: flex;
   }
   .Mobile .search_wrap .search_box{
     position: relative;
     width: 100%;
+    max-width: 500px;
     height: 40px;
   }
   .Mobile .search_wrap .search_box .input{
-    position: absolute;
+    width: 100%;
     height: 100%;
     padding: 10px;
     border-radius: 3px;
