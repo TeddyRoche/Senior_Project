@@ -40,7 +40,7 @@ Sidebar Menu -------------------------------------------------------------------
   display: none;
 }
 
- nav{
+  ul{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -92,10 +92,13 @@ Sidebar Menu -------------------------------------------------------------------
     top: 12px;
     margin-left: 10px;
 }
- .Desktop :hover{
+ .Desktop .logo:hover{
     background: #eee;   
 }
- .Desktop :hover{
+.Desktop a:hover{
+  background: #eee;   
+}
+ .Desktop ul:hover{
     width: 280px;
     transition: all 0.5s ease;
 }
