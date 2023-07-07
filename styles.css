@@ -371,6 +371,7 @@ Mobile -------------------------------------------------------------------------
   */
   .Mobile .NAV{
     z-index: 999;
+    width: 100%;
   }
   .Mobile .logo{
     text-align: center;
@@ -378,12 +379,12 @@ Mobile -------------------------------------------------------------------------
     margin-left: -20px;
     margin-top: -4px;
 }
-.Mobile .logo img{
+  .Mobile .logo img{
     width: 40px;
     height: 40px;
     border-radius: 15%;
 }
-.Mobile .logo span{
+  .Mobile .logo span{
     font-weight: bold;
     padding-left: 5px;
     padding-top: 5px;
@@ -589,6 +590,7 @@ Rotating Banner ----------------------------------------------------------------
 */
 .container{
   padding: 0rem;
+  width: 100%;
 }
 .slider-wrapper{
   position: relative;
@@ -621,6 +623,7 @@ Grid Boxes ---------------------------------------------------------------------
 */
 .Mobile .grid-con{
   padding: 11rem 10rem;
+  width: 100%;
 }
 .Mobile .grid-container {
   display: grid;
