@@ -110,21 +110,21 @@ Sidebar Menu -------------------------------------------------------------------
 /*
 Search Bar ----------------------------------------------------------------------------------------
 */
-.Search-Bar .input{
+.Desktop .Search-Bar .input{
 	border: 0;
 	outline: none;
 	color: #8b7d77;
 }
-.search_wrap{
+.Desktop .search_wrap{
 	width: 500px;
 	margin: 38px auto;
 }
-.search_wrap .search_box{
+.Desktop .search_wrap .search_box{
 	position: relative;
 	width: 500px;
 	height: 60px;
 }
-.search_wrap .search_box .input{
+.Desktop .search_wrap .search_box .input{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -134,7 +134,7 @@ Search Bar ---------------------------------------------------------------------
 	border-radius: 3px;
 	font-size: 18px;
 }
-.search_wrap .search_box .btn{
+.Desktop .search_wrap .search_box .btn{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -144,11 +144,11 @@ Search Bar ---------------------------------------------------------------------
 	z-index: 1;
 	cursor: pointer;
 }
-.search_wrap .search_box .btn:hover{
+.Desktop .search_wrap .search_box .btn:hover{
 	background: #2553A8FF;	
 }
 
-.search_wrap .search_box .btn.btn_common .fas{
+.Desktop .search_wrap .search_box .btn.btn_common .fas{
 	position: absolute;
 	top: 70%;
 	left: 50%;
@@ -157,12 +157,12 @@ Search Bar ---------------------------------------------------------------------
 	font-size: 20px;
 }
 
-.search_wrap.search_wrap_1 .search_box .btn{
+.Desktop .search_wrap.search_wrap_1 .search_box .btn{
 	right: 0;
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 }
-.search_wrap.search_wrap_1 .search_box .input{
+.Desktop .search_wrap.search_wrap_1 .search_box .input{
 	padding-right: 80px;
 }
 /*
@@ -539,22 +539,22 @@ Mobile -------------------------------------------------------------------------
   /*
   Search Bar ----------------------------------------------------------------------------------------
   */
-  .Search-Bar .input{
+  .Mobile .Search-Bar .input{
     border: 0;
     outline: none;
     color: #8b7d77;
   }
-  .search_wrap{
+  .Mobile .search_wrap{
 	  margin: 0px;
     padding-bottom: 10px;
 
   }
-  .search_wrap .search_box{
+  .Mobile .search_wrap .search_box{
     position: relative;
     width: 100%;
     height: 40px;
   }
-  .search_wrap .search_box .input{
+  .Mobile .search_wrap .search_box .input{
     position: absolute;
     top: 0;
     left: 0;
@@ -564,7 +564,7 @@ Mobile -------------------------------------------------------------------------
     font-size: 18px;
   }
   
-  .search_wrap .search_box .btn.btn_common .fas{
+  .Mobile .search_wrap .search_box .btn.btn_common .fas{
     position: absolute;
     top: 70%;
     left: 50%;
@@ -573,12 +573,12 @@ Mobile -------------------------------------------------------------------------
     font-size: 20px;
   }
   
-  .search_wrap.search_wrap_1 .search_box .btn{
+  .Mobile .search_wrap.search_wrap_1 .search_box .btn{
     right: 0;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   }
-  .search_wrap.search_wrap_1 .search_box .input{
+  .Mobile .search_wrap.search_wrap_1 .search_box .input{
     padding-right: 80px;
   }
   /*
