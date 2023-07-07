@@ -551,7 +551,7 @@ Mobile -------------------------------------------------------------------------
   }
   .search_wrap .search_box{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 40px;
   }
   .search_wrap .search_box .input{
