@@ -33,6 +33,13 @@ Sidebar Menu -------------------------------------------------------------------
 .container .Desktop{
   display: block;
 }
+.grid-con .Desktop{
+  display: block;
+}
+.grid-con .Mobile{
+  display: none;
+}
+
  nav{
     position: fixed;
     top: 0;
@@ -213,10 +220,10 @@ Rotating Banner ----------------------------------------------------------------
 /*
 Grid Boxes ----------------------------------------------------------------------------------------
 */
-.grid-con{
+.Desktop .grid-con{
     padding: 1.5rem 20rem;
 }
-.grid-container {
+.Desktop .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     padding: 20px;
@@ -225,7 +232,7 @@ Grid Boxes ---------------------------------------------------------------------
     justify-content: center;
     align-items: center;
   }
-  .grid-item {
+  .Desktop .grid-item {
     position: relative;
     border: 3px solid rgb(37, 83, 168);
     padding-top: 50px;
@@ -237,59 +244,59 @@ Grid Boxes ---------------------------------------------------------------------
     color: rgb(37, 83, 168);
     font-weight: bolder;
   }
-  .grid-item:last-child {
+  .Desktop .grid-item:last-child {
     grid-column-start: 1;
     grid-column-end: 3;
     justify-self: center;
     width: 600px;
   }
 
-  .grid-item.Bathroom{
+  .Desktop .grid-item.Bathroom{
     background-image: url("/Images/bathroom.jpg");
     background-size: cover;
     background-position: center;
   }
-  .grid-item.Kitchen{
+  .Desktop .grid-item.Kitchen{
     background-image: url("/Images/Kitchen.jpg");
     background-size: cover;
     background-position: center;
   }
-  .grid-item.Living{
+  .Desktop .grid-item.Living{
     background-image: url("/Images/living.jpg");
     background-size: cover;
     background-position: center;
   }
-  .grid-item.Bed{
+  .Desktop .grid-item.Bed{
     background-image: url("/Images/bedroom.png");
     background-size: cover;
     background-position: center;
   }
-  .grid-item.Office{
+  .Desktop .grid-item.Office{
     background-image: url("/Images/office.jpg");
     background-size: cover;
     background-position: center;
   }
-  .grid-item.Dinning{
+  .Desktop .grid-item.Dinning{
     background-image: url("/Images/dinning.jpg");
     background-size: cover;
     background-position: center;
   }
-  .grid-item.Attic{
+  .Desktop .grid-item.Attic{
     background-image: url("/Images/attic.jpg");
     background-size: cover;
     background-position: center;
   }
-  .grid-item.Base{
+  .Desktop .grid-item.Base{
     background-image: url("/Images/base.jpg");
     background-size: cover;
     background-position: center;
   }
-  .grid-item.Wash{
+  .Desktop .grid-item.Wash{
     background-image: url("/Images/laundry.jpg");
     background-size: cover;
     background-position: center;
   }
-.grid-item::before{
+.Desktop .grid-item::before{
     content: "";
     position: absolute;
     top: 0;
@@ -300,20 +307,20 @@ Grid Boxes ---------------------------------------------------------------------
     opacity: 0.3;
     z-index: 1;
 }
-.grid-item:hover::before {
+.Desktop .grid-item:hover::before {
   opacity: 0.8; 
 }
-.text-overlay {
+.Desktop .text-overlay {
     position: relative;
     pointer-events: none;
     user-select: none;
     z-index: 2;
   }
-  .grid-item:hover {
+  .Desktop .grid-item:hover {
     transform: scale(1.05);
     padding-top: 30px;
 }
-.grid-item:hover {
+.Desktop .grid-item:hover {
   transform: scale(1.05);
   color: rgb(7, 66, 173); 
   font-weight: bold; 
@@ -347,6 +354,12 @@ Mobile -------------------------------------------------------------------------
     display: block;
   }
   .container .Mobile{
+    display: block;
+  }
+  .grid-con .Desktop{
+    display: none;
+  }
+  .grid-con .Mobile{
     display: block;
   }
 
@@ -598,6 +611,117 @@ Rotating Banner ----------------------------------------------------------------
 }
 /*
 Rotating Banner -----------------------------------------------------------------------------------
+*/
+
+/*
+Grid Boxes ----------------------------------------------------------------------------------------
+*/
+.Mobile .grid-con{
+  padding: 11rem 10rem;
+}
+.Mobile .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  gap: 5px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.Mobile .grid-item {
+  position: relative;
+  border: 3px solid rgb(37, 83, 168);
+  padding-top: 20px;
+  height: 100px;
+  font-size: 35px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 8%;
+  color: rgb(37, 83, 168);
+  font-weight: bolder;
+}
+
+.Mobile .grid-item.Bathroom{
+  background-image: url("/Images/bathroom.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Mobile .grid-item.Kitchen{
+  background-image: url("/Images/Kitchen.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Mobile .grid-item.Living{
+  background-image: url("/Images/living.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Mobile .grid-item.Bed{
+  background-image: url("/Images/bedroom.png");
+  background-size: cover;
+  background-position: center;
+}
+.Mobile .grid-item.Office{
+  background-image: url("/Images/office.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Mobile .grid-item.Dinning{
+  background-image: url("/Images/dinning.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Mobile .grid-item.Attic{
+  background-image: url("/Images/attic.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Mobile .grid-item.Base{
+  background-image: url("/Images/base.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Mobile .grid-item.Wash{
+  background-image: url("/Images/laundry.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Mobile .grid-item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(105, 105, 105); 
+  opacity: 0.3;
+  z-index: 1;
+}
+.Mobile .grid-item:hover::before {
+opacity: 0.8; 
+}
+.Mobile .text-overlay {
+  position: relative;
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
+}
+.Mobile .grid-item:hover {
+  transform: scale(1.05);
+  padding-top: 30px;
+}
+.Mobile .grid-item:hover {
+transform: scale(1.05);
+color: rgb(7, 66, 173); 
+font-weight: bold; 
+font-size: 70px;
+border-color: rgb(7, 66, 173);
+
+}
+
+/*
+Grid Boxes ----------------------------------------------------------------------------------------
 */
 
 

@@ -61,9 +61,7 @@
           <nav>
             <ul>
               <li>
-                <a href="#" onclick="showSearch()">
-                  <i class="fas fa-search"></i>
-                </a>
+                <li><a href="/index.html">Home</a></li>
               </li>
               <li><a href="/products">Products</a></li>
               <li><a href="/about">About</a></li>
@@ -76,7 +74,7 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-              <li><a href="#"><i class="fas fa-search"></i></a></li>
+              <li><a href="/index.html">Home</a></li>
               <li><a href="/products">Products</a></li>
               <li><a href="/about">About</a></li>
               <li id="login"><a href="/login">Login<span></span></a></li>
@@ -151,7 +149,38 @@
     <!--
         Grid boxes
     -->
-    <section class="grid-con">
+    <section class="grid-con Desktop">
+        <div class="grid-container">
+            <div class="grid-item Bathroom" onclick="navigateTo('Room_Web_Pages/bathroom.html')">      
+                <span class="text-overlay">Bathroom</span>
+            </div>
+            <div class="grid-item Kitchen" onclick="navigateTo('Room_Web_Pages/kitchen.html')">
+                <span class="text-overlay">Kitchen</span>
+            </div>
+            <div class="grid-item Living" onclick="navigateTo('Room_Web_Pages/livingroom.html')">
+                <span class="text-overlay">Living-Room</span>
+            </div>
+            <div class="grid-item Bed" onclick="navigateTo('Room_Web_Pages/bedroom.html')">
+                <span class="text-overlay">Bedroom</span>
+            </div>
+            <div class="grid-item Office" onclick="navigateTo('Room_Web_Pages/office.html')">
+                <span class="text-overlay">Office</span>
+            </div>
+            <div class="grid-item Dinning" onclick="navigateTo('Room_Web_Pages/dinningroom.html')">
+                <span class="text-overlay">Dinning-Room</span>
+            </div>
+            <div class="grid-item Attic" onclick="navigateTo('Room_Web_Pages/attic.html')">
+                <span class="text-overlay">Attic</span>
+            </div>
+            <div class="grid-item Base" onclick="navigateTo('Room_Web_Pages/basement.html')">
+                <span class="text-overlay">Basement</span>
+            </div>
+            <div class="grid-item Wash" onclick="navigateTo('Room_Web_Pages/laundryroom.html')">
+                <span class="text-overlay">Laundry-Room</span>
+            </div>
+        </div>
+    </section> 
+    <section class="grid-con Mobile">
         <div class="grid-container">
             <div class="grid-item Bathroom" onclick="navigateTo('Room_Web_Pages/bathroom.html')">      
                 <span class="text-overlay">Bathroom</span>
