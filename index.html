@@ -12,7 +12,7 @@
     <!--
         Sidebar Menu
     -->
-    <nav class="Desktop">
+    <nav class="NAV Desktop">
         <ul>
             <li>
                 <a href="index.html" class="logo">
@@ -52,7 +52,7 @@
             </a></li>
         </ul>
     </nav>
-      <div class="Mobile NAV">
+      <div class="NAV Mobile">
         <header>
             <a href="index.html" class="logo">
                 <img src="Images/Home-Repair-Logo-6.png" alt="">
@@ -201,31 +201,49 @@
     <section class="grid-con Mobile">
         <div class="grid-container">
             <div class="grid-item Bathroom" onclick="navigateTo('Room_Web_Pages/bathroom.html')">      
-                <span class="text-overlay">Bathroom</span>
+                <div class="banner">
+                    <span class="text-overlay">Bathroom</span>
+                </div>
             </div>
             <div class="grid-item Kitchen" onclick="navigateTo('Room_Web_Pages/kitchen.html')">
-                <span class="text-overlay">Kitchen</span>
+                <div class="banner">
+                    <span class="text-overlay">Kitchen</span>
+                </div>
             </div>
             <div class="grid-item Living" onclick="navigateTo('Room_Web_Pages/livingroom.html')">
-                <span class="text-overlay">Living-Room</span>
+                <div class="banner">
+                    <span class="text-overlay">Livingroom</span>
+                </div>
             </div>
             <div class="grid-item Bed" onclick="navigateTo('Room_Web_Pages/bedroom.html')">
-                <span class="text-overlay">Bedroom</span>
+                <div class="banner">
+                    <span class="text-overlay">Bedroom</span>
+                </div>
             </div>
             <div class="grid-item Office" onclick="navigateTo('Room_Web_Pages/office.html')">
-                <span class="text-overlay">Office</span>
+                <div class="banner">
+                    <span class="text-overlay">Office</span>
+                </div>
             </div>
             <div class="grid-item Dinning" onclick="navigateTo('Room_Web_Pages/dinningroom.html')">
-                <span class="text-overlay">Dinning-Room</span>
+                <div class="banner">
+                    <span class="text-overlay">Dining Room</span>
+                </div>
             </div>
             <div class="grid-item Attic" onclick="navigateTo('Room_Web_Pages/attic.html')">
-                <span class="text-overlay">Attic</span>
+                <div class="banner">
+                    <span class="text-overlay">Attic</span>
+                </div>
             </div>
             <div class="grid-item Base" onclick="navigateTo('Room_Web_Pages/basement.html')">
-                <span class="text-overlay">Basement</span>
+                <div class="banner">
+                    <span class="text-overlay">Basement</span>
+                </div>
             </div>
             <div class="grid-item Wash" onclick="navigateTo('Room_Web_Pages/laundryroom.html')">
-                <span class="text-overlay">Laundry-Room</span>
+                <div class="banner">
+                    <span class="text-overlay">Laundry Room</span>
+                </div>
             </div>
         </div>
     </section> 
@@ -234,6 +252,17 @@
     -->
   </body>  
   <script>
+window.addEventListener('DOMContentLoaded', function() {
+  const gridItems = document.querySelectorAll('.grid-item');
+  const lastChild = gridItems[gridItems.length - 1];
+
+  if (gridItems.length === 2) {
+    lastChild.classList.add('active');
+  } else {
+    lastChild.classList.remove('disable');
+  }
+});
+
 //Pop-up ------------------------------------------------------------------------------------
 window.onload = function() {
             alert("Welcome! This is my Current Senior Project that is currently in Development and is not live yet. Please feel free to look around, but dont expect a finished project. Thank You!!");

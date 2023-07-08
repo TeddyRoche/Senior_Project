@@ -235,22 +235,20 @@ Rotating Banner ----------------------------------------------------------------
 /*
 Grid Boxes ----------------------------------------------------------------------------------------
 */
-.Desktop .grid-con{
-    padding: 0;
-}
 .Desktop .grid-container {
     display: grid;
     width: 500px;
     grid-template-columns: 220px 220px;
-    float: right;
     margin-top: -427px;
-    margin-right: 300px;
+    margin-left: 1125px;
     padding-top: 5px;
     padding-bottom: 5px;
+    float: left;
     gap: 20px;
     overflow: hidden;
     justify-content: center;
-    align-items: center;
+    border: 3px solid red;
+
 
   }
   .Desktop .grid-item {
@@ -269,7 +267,7 @@ Grid Boxes ---------------------------------------------------------------------
     grid-column-start: 1;
     grid-column-end: 3;
     justify-self: center;
-    width: 460px;
+    width: 220px;
   }
   .Desktop .banner {
     position: absolute;
@@ -363,6 +361,326 @@ Grid Boxes ---------------------------------------------------------------------
 /*
 Grid Boxes ----------------------------------------------------------------------------------------
 */
+
+@media screen and (max-width: 1650px){
+  /*
+  Grid Boxes ----------------------------------------------------------------------------------------
+  */
+  .Desktop .grid-container {
+    display: grid;
+    width: 750px;
+    grid-template-columns: 220px 220px 220px;
+    margin-top: 5px;
+    margin-left: 375px;
+    padding-top: 5px;
+    padding-bottom: 100px;
+    float: left;
+    gap: 20px;
+    overflow: hidden;
+    justify-content: center;
+    border: 3px solid red;
+  }
+  
+  .Desktop .grid-item:last-child {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    justify-self: auto;
+    width: auto;
+  }
+  
+}
+@media screen and (max-width: 1150px){
+  .Desktop .grid-container {
+    display: grid;
+    width: 750px;
+    grid-template-columns: 220px 220px 220px;
+    margin-top: 5px;
+    margin-left: 100px;
+    padding-top: 5px;
+    padding-bottom: 100px;
+    float: left;
+    gap: 20px;
+    overflow: hidden;
+    justify-content: center;
+    border: 3px solid red;
+  }
+  
+  .Desktop .grid-item:last-child {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    justify-self: auto;
+    width: auto;
+  }
+
+  .Desktop .slider-wrapper {
+    position: relative;
+    max-width: 44rem;
+    margin-top: 175px;
+    margin-left: 125px;
+}
+
+.Desktop .search_wrap{
+	width: 700px;
+	margin-left: 125px;
+  margin-top: 100px;
+  margin-bottom: -150px;
+  border: 3px solid #2553a8;
+
+}
+}
+@media screen and (max-width: 835px){
+  .NAV.Desktop{
+    display: none;
+  }
+  .NAV.Mobile{
+    display: block;
+  }
+  .Mobile .NAV{
+    z-index: 999;
+    width: 100%;
+  }
+  .Mobile .logo{
+    text-align: center;
+    display: flex;
+    margin-left: -20px;
+    margin-top: -4px;
+}
+  .Mobile .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+}
+  .Mobile .logo span{
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+  .Mobile header a {
+    text-decoration: none;
+  }
+  
+  .Mobile header {
+    padding: 0 20px;
+    background-color: #2553A8FF;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Mobile #brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #brand a {
+    color: #09c372;
+  }
+  .Mobile ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .Mobile ul a {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .Mobile ul li {
+    padding: 1px;
+    margin-left: 10px;
+  }
+  
+  .Mobile ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+   #login,
+  #signup {
+    border-radius: 5px;
+    padding: 5px 4px;
+    width: 100px; 
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    transition: ease 0.3s;
+  }
+  #signup span,
+  #login span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+   #login {
+    border: 1px solid #30bd53;
+    margin-bottom: 10px;
+  }
+  
+   #signup {
+    border: 1px solid #ff3860;
+  }
+  
+   #signup a {
+    color: #ff3860;
+  }
+  
+   #login a {
+    color: #30bd53;
+  }
+
+   #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+   #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .Mobile .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .Mobile .open .bar2 {
+    opacity: 0;
+  }
+  
+  .Mobile .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .Mobile .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .Mobile .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-color: #2553A8FF; 
+    z-index: 998; 
+    padding: 10px;
+  }
+  
+  .Mobile.mobile-menu li {
+    margin-bottom: 10px;
+  }
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+  /*
+  Nav Bar ----------------------------------------------------------------------------------------
+  */
+
+  .Desktop .grid-container {
+    display: grid;
+    width: 500px;
+    grid-template-columns: 220px 220px;
+    margin-top: 5px;
+    margin-left: 90px;
+    padding-top: 5px;
+    padding-bottom: 100px;
+    float: left;
+    gap: 20px;
+    overflow: hidden;
+    justify-content: center;
+    border: 3px solid red;
+  }
+  .Desktop .grid-item:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    width: 220px;
+  }
+
+  .Desktop .slider-wrapper {
+    position: relative;
+    width: 450px;
+    margin-top: 175px;
+    margin-left: 115px;
+}
+
+  .Desktop .search_wrap{
+    width: 460px;
+    margin-left: 110px;
+    margin-top: 25px;
+    margin-bottom: -150px;
+    border: 3px solid #2553a8;
+
+  }
+  .Desktop .search_wrap .search_box{
+    position: relative;
+    width: 457px;
+    height: 60px;  
+  }
+
+  .Desktop .slider {
+    display: flex;
+    aspect-ratio: 5 / 3;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+  }
+  .Desktop .slider a{
+    display:contents;
+  }
+  .Desktop .slider img{
+      flex: 1 0 100%;
+      scroll-snap-align: start;
+      object-fit: fill;
+  }
+  .slider-nav{
+      display: flex;
+      column-gap: 1rem;
+      position: absolute;
+      bottom: 0.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+  }
+  .Desktop .slider-nav a{
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: #2553A8FF;
+      opacity: 0.75;
+      transition: opacity ease 250ms;
+  }
+  .Desktop .slider-nav a:hover{
+      opacity: 1;
+  }
+}
 
 /*
 Mobile ----------------------------------------------------------------------------------------
@@ -639,7 +957,7 @@ Grid Boxes ---------------------------------------------------------------------
 }
 .Mobile .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 20px;
   gap: 5px;
   overflow: hidden;
@@ -651,16 +969,26 @@ Grid Boxes ---------------------------------------------------------------------
   border: 3px solid rgb(37, 83, 168);
   padding-top: 20px;
   height: 100px;
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
   overflow: hidden;
   border-radius: 8%;
-  color: rgb(37, 83, 168);
+  color: #0d3f9c;
   font-weight: bolder;
+}
+.Mobile .banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background-color: #d4d4d4;
+  z-index: 2;
+  border-radius: 8%;
 }
 
 .Mobile .grid-item.Bathroom{
-  background-image: url("/Images/bathroom.jpg");
+  background-image: url("/Images/zac-gudakov-cEZNJ-wk1VY-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -670,7 +998,7 @@ Grid Boxes ---------------------------------------------------------------------
   background-position: center;
 }
 .Mobile .grid-item.Living{
-  background-image: url("/Images/living.jpg");
+  background-image: url("/Images/kyoshi-reyes-g_P3PajXIog-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -680,7 +1008,7 @@ Grid Boxes ---------------------------------------------------------------------
   background-position: center;
 }
 .Mobile .grid-item.Office{
-  background-image: url("/Images/office.jpg");
+  background-image: url("/Images/grovemade-RvPDe41lYBA-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -700,27 +1028,16 @@ Grid Boxes ---------------------------------------------------------------------
   background-position: center;
 }
 .Mobile .grid-item.Wash{
-  background-image: url("/Images/laundry.jpg");
+  background-image: url("/Images/emmanuel-ikwuegbu-FXpJW_wdMdk-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.Mobile .grid-item::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(105, 105, 105); 
-  opacity: 0.3;
-  z-index: 1;
-}
 .Mobile .text-overlay {
   position: relative;
   pointer-events: none;
   user-select: none;
-  z-index: 2;
+  z-index: 3;
 }
 
 /*
