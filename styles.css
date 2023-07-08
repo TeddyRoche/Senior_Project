@@ -247,7 +247,6 @@ Grid Boxes ---------------------------------------------------------------------
     gap: 20px;
     overflow: hidden;
     justify-content: center;
-    border: 3px solid red;
 
 
   }
@@ -378,7 +377,6 @@ Grid Boxes ---------------------------------------------------------------------
     gap: 20px;
     overflow: hidden;
     justify-content: center;
-    border: 3px solid red;
   }
   
   .Desktop .grid-item:last-child {
@@ -402,7 +400,6 @@ Grid Boxes ---------------------------------------------------------------------
     gap: 20px;
     overflow: hidden;
     justify-content: center;
-    border: 3px solid red;
   }
   
   .Desktop .grid-item:last-child {
