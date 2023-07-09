@@ -9,57 +9,47 @@
     <script src="https://kit.fontawesome.com/2197434479.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!--
-        Sidebar Menu
+    <!--
+        Nav Menu
     -->
-    <nav class="Desktop">
-      <ul>
-          <li>
-              <a href="/index.html" class="logo">
-                  <img src="/Images/Home-Repair-Logo-6.png" alt="">
-                  <span class="nav-bar">Home Repair</span>
-              </a>
-          </li>
-          <li onclick="navigateTo('/index.html')">
-              <a href="#">
-                  <i class="fas fa-house-blank"></i>
-                  <span class="nav-bar">Home</span>
-              </a>
-          </li>
-          <li><a href="#">
-              <i class="fas fa-user"></i>
-              <span class="nav-bar">Profile</span>
-          </a></li>
-          <li><a href="#">
-              <i class="fas fa-rectangle-history"></i>
-              <span class="nav-bar">History</span>
-          </a></li>
-          <li><a href="#">
-              <i class="fas fa-bookmark"></i>
-              <span class="nav-bar">Bookmarked</span>
-          </a></li>
-          <li><a href="#">
-              <i class="fas fa-gear"></i>
-              <span class="nav-bar">Settings</span>
-          </a></li>
-          <li><a href="#">
-              <i class="fas fa-circle-info"></i>
-              <span class="nav-bar">Help</span>
-          </a></li>
-          <li><a href="#" class="bottom-nav">
-              <i class="fas fa-right-from-bracket"></i>
-              <span class="nav-bar">Logout</span>
-          </a></li>
-      </ul>
-  </nav>
-  <div class="Mobile NAV" id="mobileNav">
+    <div class="NAV Desktop">
       <header>
         <a href="/index.html" class="logo">
           <img src="/Images/Home-Repair-Logo-6.png" alt="">
           <span class="nav-bar">Home Repair</span>
-      </a>        <nav>
+        </a>
+        <nav>
           <ul>
-            <li><a href="/index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Account<p>Login/Signup <i class="fa-sharp fa-solid fa-caret-down"></i></p></a>
+              <div class="dropdown-content">
+                <form>
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                </form>
+                <div class="options">
+                  <a href="/signup">Signup</a>
+                  <span class="separator">|</span>
+                  <a href="/forgot-password">Forgot Password</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="overlay"></div>
+    </div>
+    <div class="NAV Mobile">
+      <header>
+          <a href="/index.html" class="logo">
+              <img src="/Images/Home-Repair-Logo-6.png" alt="">
+              <span class="nav-bar">Home Repair</span>
+          </a>
+        <nav>
+          <ul>
+            <li>
+              <li><a href="/index.html">Home</a></li>
+            </li>
             <li><a href="/products">Products</a></li>
             <li><a href="/about">About</a></li>
             <li id="login"><a href="/login">Login<span></span></a></li>
@@ -71,7 +61,7 @@
           <div class="bar2"></div>
           <div class="bar3"></div>
           <ul class="mobile-menu">
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="/products">Products</a></li>
             <li><a href="/about">About</a></li>
             <li id="login"><a href="/login">Login<span></span></a></li>
@@ -80,8 +70,9 @@
         </div>
       </header>
     </div>
+
   <!--
-      Sidebar Menu
+      Nav Menu
   -->
       <!--
         Search Bar

@@ -13,13 +13,144 @@ body {
 }
 
 /*
+  Nav Bar ----------------------------------------------------------------------------------------
+  */
+  .Desktop .NAV {
+    z-index: 999;
+    width: 100%;
+  }
+  .Desktop .logo {
+    text-align: center;
+    display: flex;
+    margin-left: -10px;
+    margin-top: 5px;
+  }
+  .Desktop .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+  }
+  .Desktop .logo span {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .Desktop header a {
+    text-decoration: none;
+  }
+  .Desktop header {
+    padding: 0 20px;
+    background-color: #2553A8FF;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  #brand a {
+    color: #09c372;
+  }
+  .Desktop ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 15px;
+    margin-top: -4px;
+    padding-bottom: 35px;
+    padding-top: 25px;
+  }
+  .Desktop ul a {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .Desktop ul p {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: -5px;
+  }
+  .Desktop ul li {
+    padding: 1px;
+    margin-left: 10px;
+  }
+  .Desktop ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  .Desktop .dropdown {
+    position: relative;
+  }
+  
+  .Desktop .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    top: 41px;
+    width: 200px;
+    background-color: #2553A8FF;
+    padding: 10px;
+    display: none;
+
+  }
+  
+  .Desktop .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .Desktop .dropdown-content form {
+    margin-bottom: 10px;
+  }
+  
+  .Desktop .dropdown-content input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  .Desktop .dropdown-content .options {
+    text-align: center;
+    margin-top: -10px;
+  }
+  .Desktop .dropdown-content .options a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .Desktop .dropdown-content .options a:hover {
+    color: #30bd53;
+  }
+  .Desktop .dropdown-content .options .separator {
+    color: #fff;
+    margin: 0 5px;
+  }
+  /*
+    Nav Bar ----------------------------------------------------------------------------------------
+    */
+  
+  
+
+/*
 Sidebar Menu --------------------------------------------------------------------------------------
 */
-.Mobile{
-  display: none;
-}
+
 .Desktop{
   display: block;
+}
+.Mobile{
+  display: none;
 }
 .Search-Bar .Mobile{
   display: none;
@@ -39,76 +170,6 @@ Sidebar Menu -------------------------------------------------------------------
 .grid-con .Mobile{
   display: none;
 }
-
-  ul{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    background: #fff;
-    width: 98px;
-    overflow: hidden;
-    transition: width 0.2s linear;
-    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
-    z-index: 500;
-}
-
-.Desktop .logo{
-    text-align: center;
-    display: flex;
-    transition: all 0.5s ease;
-    margin: 10px 0 0 10px;
-}
-.Desktop .logo img{
-    width: 61.5px;
-    height: 60px;
-    border-radius: 15%;
-}
-.Desktop .logo span{
-    font-weight: bold;
-    padding-left: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
- a{
-    position: relative;
-    color: rgba(37, 83, 168, 1);
-    font-size: 14px;
-    display: table;
-    width: 300px;
-    padding: 10px;
-}
-.Desktop .fas{
-    position: relative;
-    width: 80px;
-    height: 50px;
-    top: 14px;  
-    font-size: 25px;
-    text-align: center;
-}
-.Desktop .nav-bar{
-    position: relative;
-    top: 12px;
-    margin-left: 10px;
-}
- .Desktop .logo:hover{
-    background: #eee;   
-}
-.Desktop a:hover{
-  background: #eee;   
-}
- .Desktop ul:hover{
-    width: 280px;
-    transition: all 0.5s ease;
-}
-.Desktop .bottom-nav{
-    position: absolute;
-    bottom: 0;
-}
-/*
-Sidebar Menu --------------------------------------------------------------------------------------
-*/
 
 /*
 Search Bar ----------------------------------------------------------------------------------------
@@ -459,7 +520,7 @@ Mobile -------------------------------------------------------------------------
     display: block;
   }
 
-  /*
+   /*
   Nav Bar ----------------------------------------------------------------------------------------
   */
   .Mobile .NAV{
@@ -469,8 +530,8 @@ Mobile -------------------------------------------------------------------------
   .Mobile .logo{
     text-align: center;
     display: flex;
-    margin-left: -20px;
-    margin-top: -4px;
+    margin-left: -15px;
+    margin-top: 5px;
 }
   .Mobile .logo img{
     width: 40px;
@@ -506,6 +567,7 @@ Mobile -------------------------------------------------------------------------
   
   #brand a {
     color: #09c372;
+
   }
   .Mobile ul {
     list-style: none;
@@ -525,6 +587,7 @@ Mobile -------------------------------------------------------------------------
   .Mobile ul li {
     padding: 1px;
     margin-left: 10px;
+    
   }
   
   .Mobile ul li:hover {
@@ -561,10 +624,14 @@ Mobile -------------------------------------------------------------------------
   
    #signup a {
     color: #ff3860;
+    margin-left: 12px;
   }
   
    #login a {
     color: #30bd53;
+    margin-left: 20px;
+
+    
   }
 
    #hamburger-icon {
@@ -607,7 +674,7 @@ Mobile -------------------------------------------------------------------------
     position: absolute;
     top: 50px;
     left: 0;
-    height: 300px;
+    height: 200px;
     width: 100%;
     background-color: #2553A8FF; 
     z-index: 998; 
