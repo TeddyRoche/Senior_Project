@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
+    height: 100%;
     background: #dfe9f5;
     background-image: url("/Images/Home-Repair-Logo-6.png");
     background-size: 62px;
-
+    margin: 0;
+    padding: 0;
 }
 *{
     margin: 0;
@@ -16,11 +18,11 @@ body {
 }
 
 .box {
-  position: absolute;
+  position: fixed;
   background-color: #b6cdfa;
   left: 13%;
   width: 74%;
-  height: 947px;
+  height: 100vh;
   z-index: -2;
 }
 
@@ -156,10 +158,6 @@ body {
   /*
     Nav Bar ----------------------------------------------------------------------------------------
     */
-  
-/*
-Sidebar Menu --------------------------------------------------------------------------------------
-*/
 
 .Desktop{
   display: block;
@@ -312,7 +310,7 @@ Grid Boxes ---------------------------------------------------------------------
     width: 500px;
     grid-template-columns: 220px 220px;
     margin-top: -427px;
-    left: 57%;
+    left: calc( 700px + 20vw);
     padding-top: 5px;
     padding-bottom: 5px;
     gap: 20px;
@@ -440,7 +438,7 @@ Boxes
   margin-top: 15px;
   width: 320px;
   height: 250px;
-  left: 38%;
+  left: calc(345px + 20vw);
   text-align: center;
   padding-top: 80px;
   border-radius: 5px;
@@ -496,6 +494,7 @@ Bottom Banner
   width: 74%;
   background-color: #2553a8; 
   padding: 10px; 
+  z-index: 5;
 }
 
 .banner-text {
@@ -536,15 +535,14 @@ Bottom Banner
     width: 750px;
     grid-template-columns: 220px 220px 220px;
     margin-top: 5px;
-    left: 25%;
+    left: calc(-300px + 45vw);
     padding-top: 5px;
     padding-bottom: 100px;
     float: left;
-    gap: 20px;
+    gap: 10px;
     overflow: hidden;
     justify-content: center;
   }
-  
   .Desktop .grid-item:last-child {
     grid-column-start: auto;
     grid-column-end: auto;
@@ -555,9 +553,50 @@ Bottom Banner
     position: relative;
     max-width: 44rem;
     margin-top: 175px;
-    left: 26.5%;
+    left: calc(-275px + 45vw);
+  }
+
+  .history-box{
+    position: relative;
+    background-color: #8594af;
+    margin-top: -420px;
+    width: calc(-55px + 15vw);
+    height: 200px;
+    left: calc(-230px + 30vw);
+    text-align: center;
+    padding-top: 65px;
+    border-radius: 5px;
+    border: 3px solid #2553a8;
+  }
+  .favorite-box{
+    position: relative;
+    background-color: #8594af;
+    margin-top: 10px;
+    width: calc(-55px + 15vw);
+    height: 200px;
+    left: calc(-230px + 30vw);
+    text-align: center;
+    padding-top: 80px;
+    border-radius: 5px;
+    border: 3px solid #2553a8;
+  }
+  .pop-box{
+    position: absolute;
+    background-color: #8594af;
+    margin-top: -409px;
+    width: calc(-55px + 15vw);
+    height: 410px;
+    left: calc(440px + 45vw);
+    text-align: center;
+    padding-top: 170px;
+    border-radius: 5px;
+    border: 3px solid #2553a8;
   }
   
+}
+
+@media screen and (max-width: 1485px){
+
 }
 
 @media screen and (max-width: 1150px){
