@@ -19,7 +19,7 @@ body {
 
 .box {
   position: fixed;
-  background-color: #b6cdfa;
+  background: linear-gradient(to right, #b6cdfa, #7c9bda, #b6cdfa);
   left: 13%;
   width: 74%;
   height: 100vh;
@@ -57,7 +57,7 @@ body {
   }
   .Desktop header {
     padding: 0 20px;
-    background-color: #2553A8FF;
+    background: linear-gradient(to bottom, #2553a8, #3469ca, #4079e4);
     height: 52px;
     display: flex;
     justify-content: space-between;
@@ -492,7 +492,7 @@ Bottom Banner
   bottom: 0;
   left: 13%;
   width: 74%;
-  background-color: #2553a8; 
+  background: linear-gradient(to top, #2553a8, #3469ca, #4079e4);
   padding: 10px; 
   z-index: 5;
 }
