@@ -17,7 +17,7 @@ body {
 
 .box {
   position: absolute;
-  background-color: #f3f3f3;
+  background-color: #b6cdfa;
   left: 13%;
   width: 74%;
   height: 947px;
@@ -331,7 +331,7 @@ Grid Boxes ---------------------------------------------------------------------
     text-align: center;
     overflow: hidden;
     border-radius: 8%;
-    color: #0d3f9c;
+    color: #2553a8;
     font-weight: bolder;
   }
   .Desktop .grid-item:last-child {
@@ -424,13 +424,96 @@ Grid Boxes ---------------------------------------------------------------------
 }
 .Desktop .grid-item:hover {
   transform: scale(1.05);
-  color: rgb(7, 66, 173); 
+  color: #0742ad; 
   font-weight: bold; 
   border-color: rgb(7, 66, 173);
   
 }
 /*
 Grid Boxes ----------------------------------------------------------------------------------------
+*/
+
+/*
+Boxes
+*/
+.history-box{
+  position: relative;
+  background-color: #8594af;
+  margin-top: 15px;
+  width: 300px;
+  height: 250px;
+  left: 39%;
+  text-align: center;
+  padding-top: 80px;
+  border-radius: 5px;
+  border: 3px solid #2553a8;
+}
+.favorite-box{
+  position: relative;
+  background-color: #8594af;
+  margin-top: -250px;
+  width: 300px;
+  height: 250px;
+  left: 20%;
+  text-align: center;
+  padding-top: 100px;
+  border-radius: 5px;
+  border: 3px solid #2553a8;
+}
+.box-text {
+  color: #2553a8; /* Set the desired text color */
+  font-size: 25px; /* Set the desired font size */
+  font-weight: bold;
+  pointer-events: none;
+}
+.history-box:hover,
+.favorite-box:hover {
+  transform: scale(1.05);
+}
+
+/*
+Boxes
+*/
+
+/*
+Bottom Banner
+*/
+.Bot-banner {
+  position: fixed;
+  bottom: 0;
+  left: 13%;
+  width: 74%;
+  background-color: #2553a8; 
+  padding: 10px; 
+}
+
+.banner-text {
+  color: #fff; 
+  text-align: center;
+  width: 94%;
+  float: right;
+
+}
+.banner-set {
+  color: #fff; 
+  text-decoration: none;
+  float: right;
+  padding-left: 15px;
+  font-size: 12px;
+}
+.banner-ab {
+  color: #fff; 
+  text-decoration: none;
+  float: right;
+  font-size: 12px;
+}
+
+.banner-set:hover,
+.banner-ab:hover {
+  text-decoration: underline;
+}
+/*
+Bottom Banner
 */
 
 @media screen and (max-width: 1875px){
