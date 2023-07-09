@@ -438,9 +438,9 @@ Boxes
   position: relative;
   background-color: #8594af;
   margin-top: 15px;
-  width: 300px;
+  width: 320px;
   height: 250px;
-  left: 39%;
+  left: 38%;
   text-align: center;
   padding-top: 80px;
   border-radius: 5px;
@@ -450,7 +450,7 @@ Boxes
   position: relative;
   background-color: #8594af;
   margin-top: -250px;
-  width: 300px;
+  width: 320px;
   height: 250px;
   left: 20%;
   text-align: center;
@@ -465,8 +465,21 @@ Boxes
   pointer-events: none;
 }
 .history-box:hover,
-.favorite-box:hover {
+.favorite-box:hover,
+.pop-box:hover {
   transform: scale(1.05);
+}
+.pop-box{
+  position: relative;
+  background-color: #8594af;
+  margin-top: 15px;
+  width: 665px;
+  height: 100px;
+  left: 20%;
+  text-align: center;
+  padding-top: 30px;
+  border-radius: 5px;
+  border: 3px solid #2553a8;
 }
 
 /*
