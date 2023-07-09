@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
     background: #dfe9f5;
+    background-image: url("/Images/Home-Repair-Logo-6.png");
+    background-size: 56.5px;
 }
 *{
     margin: 0;
@@ -10,6 +12,15 @@ body {
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+.box {
+  position: absolute;
+  background-color: #f3f3f3;
+  left: 15%;
+  width: 1400px;
+  height: 947px;
+  z-index: -2;
 }
 
 /*
@@ -44,7 +55,7 @@ body {
   .Desktop header {
     padding: 0 20px;
     background-color: #2553A8FF;
-    height: 50px;
+    height: 52px;
     display: flex;
     justify-content: space-between;
   }
@@ -180,17 +191,16 @@ Search Bar ---------------------------------------------------------------------
 	color: #8b7d77;
 }
 .Desktop .search_wrap{
-	width: 700px;
+	width: 1200px;
 	margin-left: 400px;
-  margin-top: 100px;
+  margin-top: -46px;
   margin-bottom: -150px;
-  border: 3px solid #2553a8;
 
 }
 .Desktop .search_wrap .search_box{
 	position: relative;
-	width: 694px;
-	height: 60px;  
+	width: 1194px;
+	height: 40px;  
 }
 .Desktop .search_wrap .search_box .input{
 	position: absolute;
@@ -199,9 +209,7 @@ Search Bar ---------------------------------------------------------------------
 	width: 100%;
 	height: 100%;
 	padding: 10px 20px;
-	border-radius: 3px;
 	font-size: 18px;
-  border-radius: 5%;
 }
 .Desktop .search_wrap .search_box .btn{
 	position: absolute;
@@ -209,20 +217,21 @@ Search Bar ---------------------------------------------------------------------
 	right: 0;
 	width: 60px;
 	height: 100%;
-	background: #2553A8FF;
+	background: #fff;
 	z-index: 1;
 	cursor: pointer;
+  border-left: 2px solid #2553A8FF;
 }
 .Desktop .search_wrap .search_box .btn:hover{
-	background: #2553A8FF;	
+	background: #b9b9b9;	
 }
 
 .Desktop .search_wrap .search_box .btn.btn_common .fas{
 	position: absolute;
-	top: 70%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	color: #fff;
+	color: #2553A8FF;
 	font-size: 20px;
 }
 
