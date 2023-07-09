@@ -18,7 +18,7 @@ body {
   position: absolute;
   background-color: #f3f3f3;
   left: 15%;
-  width: 1400px;
+  width: 73%;
   height: 947px;
   z-index: -2;
 }
@@ -191,21 +191,19 @@ Search Bar ---------------------------------------------------------------------
 	color: #8b7d77;
 }
 .Desktop .search_wrap{
-	width: 1200px;
-	margin-left: 400px;
   margin-top: -46px;
   margin-bottom: -150px;
 
 }
 .Desktop .search_wrap .search_box{
 	position: relative;
-	width: 1194px;
+	width: 61%;
 	height: 40px;  
 }
 .Desktop .search_wrap .search_box .input{
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: -35%;
 	width: 100%;
 	height: 100%;
 	padding: 10px 20px;
@@ -217,13 +215,13 @@ Search Bar ---------------------------------------------------------------------
 	right: 0;
 	width: 60px;
 	height: 100%;
-	background: #fff;
+	background: #b3b3b3;
 	z-index: 1;
 	cursor: pointer;
   border-left: 2px solid #2553A8FF;
 }
 .Desktop .search_wrap .search_box .btn:hover{
-	background: #b9b9b9;	
+	background: #888888;	
 }
 
 .Desktop .search_wrap .search_box .btn.btn_common .fas{
@@ -236,7 +234,7 @@ Search Bar ---------------------------------------------------------------------
 }
 
 .Desktop .search_wrap.search_wrap_1 .search_box .btn{
-	right: 0;
+	right: -35%;
 
 }
 .Desktop .search_wrap.search_wrap_1 .search_box .input{
@@ -253,14 +251,13 @@ Rotating Banner ----------------------------------------------------------------
 .Desktop .container{
     padding: 0rem;
     width: 700px;
-    float: left;
 }
 .Desktop .slider-wrapper {
     position: relative;
     max-width: 44rem;
     margin-top: 175px;
-    margin-left: 400px;
-}
+    left: 21%;
+  }
 .Desktop .slider {
     display: flex;
     aspect-ratio: 5 / 3;
@@ -306,19 +303,17 @@ Rotating Banner ----------------------------------------------------------------
 Grid Boxes ----------------------------------------------------------------------------------------
 */
 .Desktop .grid-container {
+  position: absolute;
     display: grid;
     width: 500px;
     grid-template-columns: 220px 220px;
     margin-top: -427px;
-    margin-left: 1125px;
+    left: 58%;
     padding-top: 5px;
     padding-bottom: 5px;
-    float: left;
     gap: 20px;
     overflow: hidden;
     justify-content: center;
-
-
   }
   .Desktop .grid-item {
     position: relative;
@@ -431,7 +426,7 @@ Grid Boxes ---------------------------------------------------------------------
 Grid Boxes ----------------------------------------------------------------------------------------
 */
 
-@media screen and (max-width: 1650px){
+@media screen and (max-width: 1875px){
   /*
   Grid Boxes ----------------------------------------------------------------------------------------
   */
@@ -440,7 +435,7 @@ Grid Boxes ---------------------------------------------------------------------
     width: 750px;
     grid-template-columns: 220px 220px 220px;
     margin-top: 5px;
-    margin-left: 375px;
+    left: 25%;
     padding-top: 5px;
     padding-bottom: 100px;
     float: left;
@@ -454,6 +449,12 @@ Grid Boxes ---------------------------------------------------------------------
     grid-column-end: auto;
     justify-self: auto;
     width: auto;
+  }
+  .Desktop .slider-wrapper {
+    position: relative;
+    max-width: 44rem;
+    margin-top: 175px;
+    left: 26.5%;
   }
   
 }
