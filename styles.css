@@ -502,6 +502,7 @@ Mobile -------------------------------------------------------------------------
 @media screen and (max-width: 835px) {
   body {
     touch-action: manipulation;
+    background-image: none;
   }
   .Mobile{
     display: block;
@@ -527,6 +528,9 @@ Mobile -------------------------------------------------------------------------
   }
   .grid-con .Mobile{
     display: block;
+  }
+  .box{
+    display: none;
   }
 
    /*
