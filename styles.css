@@ -112,7 +112,6 @@ body {
     background-color: #2553A8FF;
     padding: 10px;
     display: none;
-
   }
   
   .Desktop .dropdown:hover .dropdown-content {
@@ -158,8 +157,6 @@ body {
     Nav Bar ----------------------------------------------------------------------------------------
     */
   
-  
-
 /*
 Sidebar Menu --------------------------------------------------------------------------------------
 */
@@ -188,10 +185,10 @@ Sidebar Menu -------------------------------------------------------------------
 .grid-con .Mobile{
   display: none;
 }
-
 /*
 Search Bar ----------------------------------------------------------------------------------------
 */
+
 .Desktop .Search-Bar .input{
 	border: 0;
 	outline: none;
@@ -403,6 +400,7 @@ Grid Boxes ---------------------------------------------------------------------
     background-size: cover;
     background-position: center;
   }
+
 .Desktop .grid-item::before{
     content: "";
     position: absolute;
@@ -548,6 +546,7 @@ Bottom Banner
   }
   
 }
+
 @media screen and (max-width: 1150px){
   .Desktop .grid-container {
     display: grid;
@@ -586,6 +585,7 @@ Bottom Banner
 
 }
 }
+
 /*
 Mobile ----------------------------------------------------------------------------------------
 */
