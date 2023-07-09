@@ -2,7 +2,8 @@
 body {
     background: #dfe9f5;
     background-image: url("/Images/Home-Repair-Logo-6.png");
-    background-size: 56.5px;
+    background-size: 62px;
+
 }
 *{
     margin: 0;
@@ -17,8 +18,8 @@ body {
 .box {
   position: absolute;
   background-color: #f3f3f3;
-  left: 15%;
-  width: 73%;
+  left: 13%;
+  width: 74%;
   height: 947px;
   z-index: -2;
 }
@@ -147,6 +148,12 @@ body {
     color: #fff;
     margin: 0 5px;
   }
+  .Desktop .logo{
+    z-index: 2;
+  }
+  .Desktop .logo:hover{
+    transform: scale(1.05);
+  }
   /*
     Nav Bar ----------------------------------------------------------------------------------------
     */
@@ -203,7 +210,7 @@ Search Bar ---------------------------------------------------------------------
 .Desktop .search_wrap .search_box .input{
 	position: absolute;
 	top: 0;
-	right: -35%;
+	right: -30%;
 	width: 100%;
 	height: 100%;
 	padding: 10px 20px;
@@ -256,7 +263,7 @@ Rotating Banner ----------------------------------------------------------------
     position: relative;
     max-width: 44rem;
     margin-top: 175px;
-    left: 21%;
+    left: 19%;
   }
 .Desktop .slider {
     display: flex;
@@ -308,7 +315,7 @@ Grid Boxes ---------------------------------------------------------------------
     width: 500px;
     grid-template-columns: 220px 220px;
     margin-top: -427px;
-    left: 58%;
+    left: 57%;
     padding-top: 5px;
     padding-bottom: 5px;
     gap: 20px;
