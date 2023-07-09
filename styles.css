@@ -259,6 +259,8 @@ Rotating Banner ----------------------------------------------------------------
     max-width: 44rem;
     margin-top: 175px;
     left: 19%;
+    border: 3px solid #2553a8;
+    border-radius: 0.65rem;
   }
 .Desktop .slider {
     display: flex;
@@ -287,8 +289,8 @@ Rotating Banner ----------------------------------------------------------------
     z-index: 1;
 }
 .Desktop .slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background-color: #2553A8FF;
     opacity: 0.75;
@@ -526,7 +528,7 @@ Bottom Banner
 Bottom Banner
 */
 
-@media screen and (max-width: 1875px){
+@media screen and (max-width: 1775px){
   /*
   Grid Boxes ----------------------------------------------------------------------------------------
   */
@@ -596,46 +598,127 @@ Bottom Banner
 }
 
 @media screen and (max-width: 1485px){
-
-}
-
-@media screen and (max-width: 1150px){
   .Desktop .grid-container {
     display: grid;
     width: 750px;
-    grid-template-columns: 220px 220px 220px;
+    grid-template-columns: 220px 220px;
     margin-top: 5px;
-    margin-left: 100px;
+    left: calc(-260px + 50vw);
     padding-top: 5px;
     padding-bottom: 100px;
     float: left;
-    gap: 20px;
+    gap: 10px;
     overflow: hidden;
     justify-content: center;
   }
-  
   .Desktop .grid-item:last-child {
-    grid-column-start: auto;
-    grid-column-end: auto;
-    justify-self: auto;
-    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    width: 220px;
   }
-
   .Desktop .slider-wrapper {
     position: relative;
     max-width: 44rem;
     margin-top: 175px;
-    margin-left: 125px;
+    left: calc(-350px + 50vw);
+  }
+
+  .history-box{
+    position: relative;
+    background-color: #8594af;
+    margin-top: 10px;
+    width: 195px;
+    height: 215px;
+    left: calc(-330px + 50vw);
+    text-align: center;
+    padding-top: 65px;
+    border-radius: 8px;
+    border: 3px solid #2553a8;
+  }
+  .favorite-box{
+    position: relative;
+    background-color: #8594af;
+    margin-top: 10px;
+    width: 195px;
+    height: 215px;
+    left: calc(-330px + 50vw);
+    text-align: center;
+    padding-top: 80px;
+    border-radius: 8px;
+    border: 3px solid #2553a8;
+  }
+  .pop-box{
+    position: absolute;
+    background-color: #8594af;
+    margin-top: 10px;
+    width: 195px;
+    height: 215px;
+    left: calc(-330px + 50vw);
+    text-align: center;
+    padding-top: 80px;
+    border-radius: 8px;
+    border: 3px solid #2553a8;
+  }
 }
 
-.Desktop .search_wrap{
-	width: 700px;
-	margin-left: 125px;
-  margin-top: 100px;
-  margin-bottom: -150px;
-  border: 3px solid #2553a8;
+@media screen and (max-width: 990px){
+  .Desktop .grid-container {
+    display: grid;
+    width: 750px;
+    grid-template-columns: 220px 220px;
+    margin-top: 230px;
+    left: calc(-375px + 50vw);
+    padding-top: 5px;
+    padding-bottom: 100px;
+    float: left;
+    gap: 10px;
+    overflow: hidden;
+    justify-content: center;
+  }
 
-}
+  .Desktop .slider-wrapper {
+    position: relative;
+    max-width: 37rem;
+    margin-top: 175px;
+    left: calc(-300px + 50vw);
+  }
+  .history-box{
+    position: relative;
+    background-color: #8594af;
+    margin-top: 10px;
+    width: 190px;
+    height: 215px;
+    left: calc(-300px + 50vw);
+    text-align: center;
+    padding-top: 65px;
+    border-radius: 8px;
+    border: 3px solid #2553a8;
+  }
+  .favorite-box{
+    position: relative;
+    background-color: #8594af;
+    margin-top: -215px;
+    width: 190px;
+    height: 215px;
+    left: calc(-100px + 50vw);
+    text-align: center;
+    padding-top: 80px;
+    border-radius: 8px;
+    border: 3px solid #2553a8;
+  }
+  .pop-box{
+    position: absolute;
+    background-color: #8594af;
+    margin-top: -215px;
+    width: 190px;
+    height: 215px;
+    left: calc(100px + 50vw);
+    text-align: center;
+    padding-top: 80px;
+    border-radius: 8px;
+    border: 3px solid #2553a8;
+  }
 }
 
 /*
@@ -958,6 +1041,12 @@ Grid Boxes ---------------------------------------------------------------------
   z-index: 2;
   border-radius: 8%;
 }
+.Mobile .grid-item:last-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  width: 50%;
+}
 
 .Mobile .grid-item.Bathroom{
   background-image: url("/Images/zac-gudakov-cEZNJ-wk1VY-unsplash.jpg");
@@ -1017,4 +1106,14 @@ Grid Boxes ---------------------------------------------------------------------
 */
 
 
+}
+
+@media screen and (max-width: 644px)
+{
+  .Mobile .grid-item:last-child {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    justify-self: auto;
+    width: auto;
+  }
 }
