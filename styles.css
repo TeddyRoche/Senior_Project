@@ -20,11 +20,11 @@ body {
 .box {
   position: fixed;
   background: linear-gradient(to right, #b6cdfa, #7c9bda, #b6cdfa);
-  left: 13%;
-  width: 74%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: -2;
 }
+
 
 /*
   Nav Bar ----------------------------------------------------------------------------------------
@@ -492,8 +492,7 @@ Bottom Banner
 .Bot-banner {
   position: fixed;
   bottom: 0;
-  left: 13%;
-  width: 74%;
+  width: 100%;
   background: linear-gradient(to top, #2553a8, #3469ca, #4079e4);
   padding: 10px; 
   z-index: 5;
@@ -503,6 +502,7 @@ Bottom Banner
   color: #fff; 
   text-align: center;
   width: 94%;
+  padding-right: 10px;
   float: right;
 
 }
